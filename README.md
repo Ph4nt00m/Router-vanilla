@@ -1,5 +1,5 @@
 ### EN
-# hort introduction
+# Short introduction
 I met a lot of people who wanted to create their own routers for various reasons. In the end, using the vanilla JS router can reduce your dependence on infrastructure. As long as you understand all the independent parts of its manufacture, you can easily create your own vanilla Javascript router.
 
 ## Here are the key things to know to create your own JS router:
