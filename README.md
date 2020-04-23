@@ -1,3 +1,25 @@
+### EN
+# hort introduction
+I met a lot of people who wanted to create their own routers for various reasons. In the end, using the vanilla JS router can reduce your dependence on infrastructure. As long as you understand all the independent parts of its manufacture, you can easily create your own vanilla Javascript router.
+
+## Here are the key things to know to create your own JS router:
+
+1. The key to vanilla JS routing is the location.pathname property.
+2. Listen for the "popstate" event to respond to .pathname changes. This happens whenever a new URL is typed into the browser's address bar but we don't want to refresh the page - we simply want to refresh the view by loading new content.
+3. You can optionally store routes in a routes[] array.
+4. Knowledge of JavaScript Regular Expressions (RegEx) to parse the URL is necessary.
+5. Basic understanding of history and history.pushState (JavaScript's History API) is critical if you wish to integrate your router into native browser architecture.
+
+## A quick review of the JavaScript History API
+I've seen so many vanilla JS router tutorials that don't mention JavaScript's History API. Too bad, because clicking the browser's Back and Forward buttons has everything to do with navigating between URLs in browsing history. You can't speak about routing without the History API.
+1. history.back() is the same as history.go(-1), or when user clicks the Back button in their browser. You can use either method to the same effect.
+2. history.forward() executes when user presses the browser's Forward button, and it is equivalent to history.go(1).
+3. go() is similar to the .back() and forward() methods, except you can specify how many steps back or forward you want to go within the browser history stack.
+4. pushState() will push new state to the History API.
+5. .length property is the number of elements in the session history.
+6. .state property is used to look up state without listening to the "popstate" event.
+
+### FR
 # Brève introduction
 J'ai rencontré beaucoup de gens qui voulaient créer leurs propres routeurs pour diverses raisons. En fin de compte, l'utilisation du routeur JS vanilla peut réduire votre dépendance à l'égard de l'infrastructure. Tant que vous comprenez toutes les parties indépendantes de sa fabrication, vous pouvez facilement créer votre propre routeur vanilla JavaScript.
 
